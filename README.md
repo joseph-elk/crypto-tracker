@@ -15,3 +15,11 @@ This bot connects to a live blockchain API to fetch the latest price of Bitcoin 
 * **Dependency Injection:** Database connection is injected through the class constructor to optimize resource consumption.
 * **DRY Principle:** Refactored code structure to prevent repetitive database operations.
 * **Security:** Configured `.gitignore` to prevent local runtime database logs (`.db`) from being exposed in the public repository.
+
+## Running Tests
+This project includes an automated test suite developed with `pytest` to verify the bot's logic and database integration.
+
+To install dependencies and run the tests, execute the following commands in your terminal:
+```bash
+pip install pytest requests
+pytest
