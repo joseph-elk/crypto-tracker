@@ -49,9 +49,10 @@ class CryptoBot:
 shared_connection = sqlite3.connect("crypto_tracker.db")
 btc = CryptoBot("BTC", 64200, shared_connection)
 
-while True:
-    print(btc.check_market())
-    time.sleep(5)
+if __name__ == "__main__":
+    while True:
+        print(btc.check_market())
+        time.sleep(5)
 
 # (Optional) Close connection when the whole program completely stops
 # shared_connection.close()
